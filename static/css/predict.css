@@ -1,0 +1,22 @@
+h3{
+    text-align:center;
+}
+.submitbutton{
+    text-align: center;
+    font-family: montserrat;
+}
+
+.btn-large{
+    font-family: montserrat;
+    text-transform: none;
+}
+
+img{
+    border-radius: 10px;
+    box-shadow: gray 2px;
+}
+
+.myimage{
+    text-align:center;
+    margin-top: 10px;
+}

@@ -1,0 +1,13 @@
+main{
+    flex: 1 0 auto;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.flow-text{
+    margin-left: 10px;
+}

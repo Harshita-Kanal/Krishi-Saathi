@@ -1,0 +1,29 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+
+.brand-logo{
+    margin-left: 20px;
+}
+
+.item{
+    margin-right: 30px;
+}
+
+main{
+    flex: 1 0 auto;
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+ 

@@ -1,0 +1,33 @@
+{% extends 'krishi/main.html' %}
+{% load static %}
+{% block content %}
+<head>
+<link rel = "stylesheet" href = "{% static '/css/predict.css' %}">
+</head>
+<h1>Disease Detection</h1>
+<div class = "container">
+<h3>Insert Leaf image for disease detection</h3>
+  <form action="{% url "diagnose" %}" method = "post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="file-field input-field">
+      <div class="btn">
+        <span>File</span>
+        <input type="file" accept = "image/*" onchange="preview()"  name = "myfile">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text">
+      </div>
+    </div>
+        <div class = "submitbutton">
+        <button class = "waves-effect waves-light btn-large" type="submit">Predict</button>
+        </div>
+        <div class= "myimage">
+        <img alt = "no image uploaded" id="frame" src="" width="200px" height="200px"/>
+        </div>
+  </form>
+  {% comment %} <h4>{{result}}</h4> {% endcomment %}
+</div>
+<script src = "{% static 'js/predict.js' %}"> 
+
+</script>
+{% endblock content %} 

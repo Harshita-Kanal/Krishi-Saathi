@@ -1,0 +1,59 @@
+
+ {% extends 'krishi/main.html' %} 
+ {% load static %} 
+
+  {% block content %}
+   <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="{% static 'images/flower.jpg' %}"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Krishi-Saathi</h3>
+          <h5 class="light grey-text text-lighten-3">Farmer is the backbone of the nation.</h5>
+        </div>
+      </li>
+      <li>
+        <img src= "{% static 'images/farm.jpg' %}" > <!-- random image -->
+        <div class="caption left-align">
+          <h3>Krishi-Saadhan</h3>
+          <h5 class="light grey-text text-lighten-3">There is a need to connect the people to the farmer.</h5>
+        </div>
+      </li>
+      <li>
+        <img src= "{% static 'images/rice.jpg' %}"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Krishi-Seva</h3>
+          <h5 class="light grey-text text-lighten-3">The farmer should receive all support.</h5>
+        </div>
+      </li>
+      <li>
+        <img src= "{% static 'images/wheat.jpg' %}"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Krishi-Suvidha</h3>
+          <h5 class="light grey-text text-lighten-3">Connecting farmer to technology.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+ <div class = "container">
+ <h1> About </h1>
+ <p class = "flow-text">
+ India is an agricultural nation, A large part of India's population depends in agriculture, the farmer forms the 
+ backbone of the agricultural system.
+ However, the condition of the Indian Farmer still remains deplorable.There is a great need to connect the 
+ farmer with technology. 
+ </p>
+  <p class = "flow-text">
+ The vision is to equip the farmer with accessible technology tools that would make it possible for him
+ to alleviate his produce and at the same time provide him with all resources at one place,
+ Precision agriculture, automated disease detection system are few of the techniques we wish to implement to improve
+ the farmer's condition.
+ </p>
+ <p class = "flow-text">
+ Other than this the motive is to empathize the citizen towards the needs of the farmers,
+ provide farmer with a platform to connect directly with the citizen and eliminate the middleman and 
+ ensure complete transfer of profits to the farmer.This could be greatly used to alleviate the condition of the farmer
+ </p>
+ </div>
+ <script src = "{% static 'js/about.js' %}"></script>
+{% endblock content %}
