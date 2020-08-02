@@ -22,12 +22,14 @@
         <button class = "waves-effect waves-light btn-large" type="submit">Predict</button>
         </div>
         <div class= "myimage">
-        <img alt = "no image uploaded" id="frame" src="" width="200px" height="200px"/>
+        <img alt = "" id="frame" src="" width="200px" height="200px"/>
         </div>
   </form>
   {% comment %} <h4>{{result}}</h4> {% endcomment %}
 </div>
 <script src = "{% static 'js/predict.js' %}"> 
-
+$("img").on("error", function () {
+    $(this).attr('src', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=');
+});
 </script>
 {% endblock content %} 
